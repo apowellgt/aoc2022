@@ -2,13 +2,11 @@ from day1input import today
 
 calories = 0
 max_calories = 0
-elf = 0
 all_calories = []
 
 for line in today.splitlines():
   if line == "":
     all_calories.append(calories)
-    elf = elf+1
     calories = 0
   else:
     calories += int(line)
